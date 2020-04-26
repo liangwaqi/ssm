@@ -31,6 +31,7 @@ public class UserController {
 
     @RequestMapping("deleteUserById")
     public String deleteUserById(@RequestParam("id")Long id) {
+        //开始开发
         userService.deleteUserById(id);
         return "redirect:/user/users";
     }
